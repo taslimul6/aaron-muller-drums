@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aaron Muller Drums | Professional Drum Lessons Melbourne</title>
+<meta name="description" content="Learn drums with Aaron Muller in Northcote, Melbourne. 5-star rated drum lessons for all ages and skill levels. Book your first lesson today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0b;
+  --bg-elevated: #111114;
+  --bg-card: #16161a;
+  --border: #232328;
+  --text-primary: #f0f0f2;
+  --text-secondary: #8a8a96;
+  --text-muted: #5a5a66;
+  --accent: #e8590c;
+  --accent-glow: rgba(232, 89, 12, 0.15);
+  --accent-hover: #f76707;
+  --success: #20c997;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ═══════════ NAV ═══════════ */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(10, 10, 11, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.nav-logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.nav-logo span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.nav-links a:hover { color: var(--text-primary); }
+
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  font-size: 1rem;
+  border-radius: 12px;
+}
+
+.mobile-menu-btn { display: none; background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; }
+
+/* ═══════════ HERO ═══════════ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 70% 30%, rgba(232, 89, 12, 0.08) 0%, transparent 60%),
+              radial-gradient(ellipse 60% 40% at 20% 70%, rgba(232, 89, 12, 0.04) 0%, transparent 50%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-glow);
+  border: 1px solid rgba(232, 89, 12, 0.2);
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.hero-badge .star { font-size: 0.75rem; }
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.hero h1 .highlight {
+  color: var(--accent);
+  position: relative;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stat-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+.hero-float-card {
+  position: absolute;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  backdrop-filter: blur(12px);
+}
+
+.hero-float-card.top {
+  top: 40px;
+  right: -30px;
+}
+
+.hero-float-card.bottom {
+  bottom: 60px;
+  left: -40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.float-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.float-text strong {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.float-text span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.float-rating {
+  color: #fcc419;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* ═══════════ SOCIAL PROOF BAR ═══════════ */
+.social-proof {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.social-proof-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.social-proof-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.social-proof-item .stars {
+  color: #fcc419;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+/* ═══════════ SECTIONS ═══════════ */
+section { padding: 100px 0; }
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 64px;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ═══════════ SERVICES ═══════════ */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+  border-color: rgba(232, 89, 12, 0.3);
+  transform: translateY(-4px);
+}
+
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--accent-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-price {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.service-price span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* ═══════════ ABOUT ═══════════ */
+.about { background: var(--bg-elevated); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content h2 {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.about-highlight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.about-highlight-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--accent-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.about-highlight-text {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.about-highlight-text strong {
+  display: block;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+/* ═══════════ TESTIMONIALS ═══════════ */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: var(--transition);
+}
+
+.testimonial-card:hover {
+  border-color: rgba(232, 89, 12, 0.2);
+}
+
+.testimonial-stars {
+  color: #fcc419;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.testimonial-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.testimonial-role {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ═══════════ PRICING ═══════════ */
+.pricing { background: var(--bg-elevated); }
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.pricing-card.featured {
+  border-color: var(--accent);
+  transform: scale(1.03);
+  box-shadow: 0 20px 60px rgba(232, 89, 12, 0.1);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.pricing-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pricing-desc {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-bottom: 24px;
+}
+
+.pricing-amount {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.pricing-amount span {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.pricing-period {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-bottom: 32px;
+}
+
+.pricing-features {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.pricing-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.pricing-features li::before {
+  content: '→';
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pricing-card .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ═══════════ MAP / LOCATION ═══════════ */
+.map-section .container { position: relative; }
+
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.map-info {
+  position: sticky;
+  top: 100px;
+}
+
+.map-info h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.map-info p {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.map-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.map-detail {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.map-detail-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--accent-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.map-detail-text strong {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 2px;
+}
+
+.map-detail-text span {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.map-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 16/10;
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(80%) invert(0.9) contrast(0.9);
+}
+
+/* ═══════════ BOOKING ═══════════ */
+.booking { background: var(--bg-elevated); }
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.booking-content h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.booking-content > p {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.booking-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.booking-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.booking-feature-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--accent-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.booking-form-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+
+.booking-form h3 {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-family: 'Inter', sans-serif;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.booking-form .btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+/* ═══════════ FAQ ═══════════ */
+.faq-grid {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  transition: var(--transition);
+}
+
+.faq-question:hover {
+  color: var(--accent);
+}
+
+.faq-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+  background: var(--accent);
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: 24px;
+}
+
+.faq-answer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ═══════════ CTA ═══════════ */
+.cta {
+  padding: 80px 0;
+  background: var(--bg);
+}
+
+.cta-box {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 64px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.cta-box h2 {
+  font-size: 2.25rem;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.cta-box p {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+}
+
+/* ═══════════ FOOTER ═══════════ */
+.footer {
+  padding: 60px 0 32px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-brand p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.footer-col h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col a {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  transition: var(--transition);
+}
+
+.footer-col a:hover { color: var(--accent); }
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-bottom p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-social a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ═══════════ FLOATING WHATSAPP ═══════════ */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  transition: var(--transition);
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3); }
+  50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.5), 0 0 0 8px rgba(37, 211, 102, 0.1); }
+}
+
+/* ═══════════ RESPONSIVE ═══════════ */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+  .hero-visual { order: -1; }
+  .hero-image-wrapper { max-width: 360px; margin: 0 auto; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .pricing-card.featured { transform: none; }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .map-grid { grid-template-columns: 1fr; }
+  .map-info { position: static; }
+  .booking-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .mobile-menu-btn { display: block; }
+  .hero { padding-top: 100px; min-height: auto; padding-bottom: 60px; }
+  .hero h1 { font-size: 2.25rem; }
+  .hero-stats { gap: 24px; }
+  .hero-float-card { display: none; }
+  .services-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .section-title { font-size: 1.75rem; }
+  section { padding: 72px 0; }
+  .cta-box { padding: 40px 24px; }
+  .cta-box h2 { font-size: 1.5rem; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .form-row { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">Aaron<span>.</span>Drums</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/61405050981" class="btn btn-outline" target="_blank">WhatsApp</a>
+      <a href="#booking" class="btn btn-primary">Book Lesson</a>
+    </div>
+    <button class="mobile-menu-btn">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="star">★</span> 5.0 Rating &bull; 16 Happy Students
+      </div>
+      <h1>Learn to <span class="highlight">Play Drums</span> Like a Pro</h1>
+      <p class="hero-subtitle">Personalised drum lessons in Northcote, Melbourne. From your first beat to advanced techniques — Aaron Muller helps you find your rhythm.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary btn-lg">Book Your First Lesson →</a>
+        <a href="https://wa.me/61405050981" class="btn btn-outline btn-lg" target="_blank">💬 WhatsApp</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-value">16+</div>
+          <div class="stat-label">Reviews</div>
+        </div>
+        <div>
+          <div class="stat-value">5.0</div>
+          <div class="stat-label">Star Rating</div>
+        </div>
+        <div>
+          <div class="stat-value">All Ages</div>
+          <div class="stat-label">Welcome</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1571327073757-71d13c24de30?w=600&h=750&fit=crop" alt="Drum lessons with Aaron Muller">
+      </div>
+      <div class="hero-float-card top">
+        <span class="float-rating">★★★★★</span>
+        <div class="float-text">
+          <strong>"Best drum teacher!"</strong>
+          <span>— Google Review</span>
+        </div>
+      </div>
+      <div class="hero-float-card bottom">
+        <div class="float-avatar">AM</div>
+        <div class="float-text">
+          <strong>Aaron Muller</strong>
+          <span>Professional Drum Instructor</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<div class="social-proof">
+  <div class="container social-proof-inner">
+    <div class="social-proof-item">
+      <span class="stars">★★★★★</span>
+      <span>5.0 on Google</span>
+    </div>
+    <div class="social-proof-item">
+      <span>📍</span>
+      <span>Northcote, Melbourne</span>
+    </div>
+    <div class="social-proof-item">
+      <span>🎵</span>
+      <span>All Skill Levels</span>
+    </div>
+    <div class="social-proof-item">
+      <span>👨‍🏫</span>
+      <span>Expert Instructor</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Drum Lessons for Every Level</h2>
+      <p class="section-desc">Whether you're picking up sticks for the first time or refining advanced techniques, Aaron's got you covered.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🥁</div>
+        <h3>Beginner Lessons</h3>
+        <p>Learn proper grip, basic rhythms, reading drum notation, and play your first beat patterns from day one.</p>
+        <div class="service-price">$45 <span>/ 30 min</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎶</div>
+        <h3>Intermediate Training</h3>
+        <p>Build coordination, explore different genres, work on fills, and develop your own playing style.</p>
+        <div class="service-price">$65 <span>/ 45 min</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔥</div>
+        <h3>Advanced Techniques</h3>
+        <p>Master complex time signatures, double bass, odd meters, improvisation, and performance preparation.</p>
+        <div class="service-price">$85 <span>/ 60 min</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">👶</div>
+        <h3>Kids Lessons (5-12)</h3>
+        <p>Fun, engaging lessons designed for young learners. Build coordination, confidence, and a love for music.</p>
+        <div class="service-price">$40 <span>/ 30 min</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎤</div>
+        <h3>Band Coaching</h3>
+        <p>Learn to play with other musicians, develop timing, dynamics, and prepare for live performances.</p>
+        <div class="service-price">$90 <span>/ 60 min</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎧</div>
+        <h3>Online Lessons</h3>
+        <p>Can't make it in person? Get the same quality instruction via video call from anywhere in Australia.</p>
+        <div class="service-price">$50 <span>/ 45 min</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=600&h=450&fit=crop" alt="Drum studio">
+    </div>
+    <div class="about-content">
+      <span class="section-label">About Aaron</span>
+      <h2>Passionate Drummer. Dedicated Teacher.</h2>
+      <p>Aaron Muller is a professional drum instructor based in Northcote, Melbourne. With years of performance and teaching experience, Aaron specialises in making drum lessons accessible, engaging, and genuinely fun for students of all ages.</p>
+      <p>From complete beginners who've never held a stick to experienced players looking to level up — Aaron tailors every lesson to your goals, pace, and musical taste.</p>
+      <div class="about-highlights">
+        <div class="about-highlight">
+          <div class="about-highlight-icon">🎯</div>
+          <div class="about-highlight-text">
+            <strong>Tailored Approach</strong>
+            Lessons customised to your goals
+          </div>
+        </div>
+        <div class="about-highlight">
+          <div class="about-highlight-icon">⏰</div>
+          <div class="about-highlight-text">
+            <strong>Flexible Schedule</strong>
+            Morning, afternoon & evening slots
+          </div>
+        </div>
+        <div class="about-highlight">
+          <div class="about-highlight-icon">🏠</div>
+          <div class="about-highlight-text">
+            <strong>Local Studio</strong>
+            Easy access in Northcote
+          </div>
+        </div>
+        <div class="about-highlight">
+          <div class="about-highlight-icon">💻</div>
+          <div class="about-highlight-text">
+            <strong>Online Option</strong>
+            Learn from anywhere via Zoom
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What Students Say</span>
+      <h2 class="section-title">Loved by Students & Parents</h2>
+      <p class="section-desc">Don't just take our word for it — hear from people who've experienced Aaron's teaching firsthand.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Aaron is an incredible teacher. My 8-year-old son looks forward to every lesson. He's learned so much in just a few months!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SM</div>
+          <div>
+            <div class="testimonial-name">Sarah M.</div>
+            <div class="testimonial-role">Parent</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I started as a complete beginner and now I'm playing along to my favourite songs. Aaron makes learning drums so enjoyable."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JT</div>
+          <div>
+            <div class="testimonial-name">James T.</div>
+            <div class="testimonial-role">Adult Student</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Professional, patient, and genuinely passionate about teaching. Best drum teacher in Melbourne hands down."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">RK</div>
+          <div>
+            <div class="testimonial-name">Ryan K.</div>
+            <div class="testimonial-role">Intermediate Student</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Pricing</span>
+      <h2 class="section-title">Simple, Transparent Pricing</h2>
+      <p class="section-desc">No hidden fees. No long-term contracts. Pay as you go or save with a package.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-name">Single Lesson</div>
+        <div class="pricing-desc">Try it out — no commitment</div>
+        <div class="pricing-amount">$45<span>.00</span></div>
+        <div class="pricing-period">per 30-minute session</div>
+        <ul class="pricing-features">
+          <li>One-on-one instruction</li>
+          <li>All equipment provided</li>
+          <li>Personalised lesson plan</li>
+          <li>Practice exercises to take home</li>
+        </ul>
+        <a href="https://wa.me/61405050981" class="btn btn-outline" target="_blank">Book Now</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-name">4-Lesson Pack</div>
+        <div class="pricing-desc">Best value for regular students</div>
+        <div class="pricing-amount">$160<span>.00</span></div>
+        <div class="pricing-period">save $20 — use within 8 weeks</div>
+        <ul class="pricing-features">
+          <li>Everything in Single Lesson</li>
+          <li>Priority scheduling</li>
+          <li>Progress tracking</li>
+          <li>Genre-specific exercises</li>
+          <li>Recording of practice tracks</li>
+        </ul>
+        <a href="https://wa.me/61405050981" class="btn btn-primary" target="_blank">Get Started</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-name">8-Lesson Pack</div>
+        <div class="pricing-desc">Serious about levelling up</div>
+        <div class="pricing-amount">$280<span>.00</span></div>
+        <div class="pricing-period">save $80 — use within 12 weeks</div>
+        <ul class="pricing-features">
+          <li>Everything in 4-Pack</li>
+          <li>Flexible rescheduling</li>
+          <li>Band coaching session included</li>
+          <li>Performance prep & recording</li>
+          <li>Free online lesson credit</li>
+        </ul>
+        <a href="https://wa.me/61405050981" class="btn btn-outline" target="_blank">Go for It</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION / MAP -->
+<section id="location" class="map-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Find Us</span>
+      <h2 class="section-title">Conveniently Located in Northcote</h2>
+      <p class="section-desc">Easy to reach by car or public transport. Street parking available.</p>
+    </div>
+    <div class="map-grid">
+      <div class="map-info">
+        <h2>Visit the Studio</h2>
+        <p>Located in the heart of Northcote, the studio is set up with professional acoustic drums, a comfortable learning environment, and everything you need for a great lesson.</p>
+        <div class="map-details">
+          <div class="map-detail">
+            <div class="map-detail-icon">📍</div>
+            <div class="map-detail-text">
+              <strong>Address</strong>
+              <span>20 Eastment St, Northcote VIC 3070</span>
+            </div>
+          </div>
+          <div class="map-detail">
+            <div class="map-detail-icon">📞</div>
+            <div class="map-detail-text">
+              <strong>Phone / WhatsApp</strong>
+              <span>+61 405 050 981</span>
+            </div>
+          </div>
+          <div class="map-detail">
+            <div class="map-detail-icon">🕐</div>
+            <div class="map-detail-text">
+              <strong>Hours</strong>
+              <span>Mon–Sat: 9am – 7pm<br>Sun: By appointment</span>
+            </div>
+          </div>
+          <div class="map-detail">
+            <div class="map-detail-icon">🚗</div>
+            <div class="map-detail-text">
+              <strong>Parking</strong>
+              <span>Free street parking available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9984!3d-37.7738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6423c%20Northcote%20VIC%203070!2s20%20Eastment%20St%2C%20Northcote%20VIC%203070!5e0!3m2!1sen!2sau!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="booking">
+  <div class="container booking-grid">
+    <div class="booking-content">
+      <span class="section-label">Book a Lesson</span>
+      <h2>Ready to Start Drumming?</h2>
+      <p>Fill in the form and Aaron will get back to you within a few hours to confirm your first lesson slot. Or just WhatsApp directly for a faster response.</p>
+      <div class="booking-features">
+        <div class="booking-feature">
+          <div class="booking-feature-icon">✓</div>
+          <span>No payment required to book</span>
+        </div>
+        <div class="booking-feature">
+          <div class="booking-feature-icon">✓</div>
+          <span>Free 15-min consultation call</span>
+        </div>
+        <div class="booking-feature">
+          <div class="booking-feature-icon">✓</div>
+          <span>Flexible rescheduling — no fees</span>
+        </div>
+        <div class="booking-feature">
+          <div class="booking-feature-icon">✓</div>
+          <span>All equipment provided</span>
+        </div>
+      </div>
+    </div>
+    <div class="booking-form-wrapper">
+      <form class="booking-form" onsubmit="handleBooking(event)">
+        <h3>Book Your First Lesson</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="04xx xxx xxx" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label>Experience Level</label>
+          <select>
+            <option value="">Select your level</option>
+            <option value="beginner">Complete Beginner</option>
+            <option value="some">Some Experience</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Preferred Day / Time</label>
+          <input type="text" placeholder="e.g., Weekday evenings">
+        </div>
+        <div class="form-group">
+          <label>Message (optional)</label>
+          <textarea placeholder="Any questions or specific goals?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Request Booking →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Common Questions</h2>
+      <p class="section-desc">Everything you need to know before your first lesson.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item active">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do I need any prior experience?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Not at all! Most of Aaron's students start as complete beginners. Lessons are tailored to your current skill level, whether you've never touched a drum or you're an experienced player looking to refine specific techniques.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What age do you accept students from?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Aaron teaches students of all ages — from kids as young as 5 to adults of any age. Lessons for younger children are designed to be fun and engaging, focusing on rhythm games and basic coordination alongside proper technique.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do I need my own drum kit?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>No — the studio is fully equipped with professional acoustic and electronic drum kits. If you want to practise at home, Aaron can recommend affordable starter kits and practice pads to get you going.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can I reschedule a lesson?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Just give at least 24 hours' notice and Aaron will find a new slot that works for you — no rescheduling fees, ever. Life happens, and the policy reflects that.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do you offer online lessons?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! Online lessons are available via Zoom for students who prefer learning from home or live outside Melbourne. All you need is a practice pad or drum kit, a device with a camera, and a stable internet connection.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How quickly will I start playing songs?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Most students can play basic beats and patterns within their first 2-3 lessons. By the end of the first month, you'll likely be playing along to simple songs. Aaron focuses on making progress feel fast and fun.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Your First Beat is One Click Away</h2>
+      <p>Stop dreaming about playing drums. Start today with a personalised lesson from Aaron Muller.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/61405050981" class="btn btn-primary btn-lg" target="_blank">💬 WhatsApp Now</a>
+        <a href="#booking" class="btn btn-outline btn-lg">Book Online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">Aaron<span>.</span>Drums</a>
+        <p>Professional drum lessons in Northcote, Melbourne. All ages and skill levels welcome.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#booking">Book a Lesson</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/61405050981">+61 405 050 981</a></li>
+          <li><a href="#location">Northcote VIC 3070</a></li>
+          <li>Mon–Sat: 9am – 7pm</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Aaron Muller Drums. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#">IG</a>
+        <a href="#">YT</a>
+        <a href="#">TT</a>
+        <a href="#">FB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/61405050981" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  💬
+</a>
+
+<script>
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isActive = item.classList.contains('active');
+  
+  // Close all
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+  
+  // Open clicked if wasn't active
+  if (!isActive) item.classList.add('active');
+}
+
+function handleBooking(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.querySelector('input[type="text"]').value;
+  const phone = form.querySelector('input[type="tel"]').value;
+  const level = form.querySelector('select').value;
+  const msg = `Hi Aaron! I'd like to book a first drum lesson.%0A%0AName: ${name}%0APhone: ${phone}%0ALevel: ${level}`;
+  window.open(`https://wa.me/61405050981?text=${msg}`, '_blank');
+}
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+
+</body>
+</html>
